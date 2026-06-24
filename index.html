@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>BlossomUp | Personal Growth Platform | Online Worldwide</title>
+<meta name="description" content="BlossomUp is a modern digital personal growth platform combining psychology-inspired assessments, habit-building tools, and guided development programs to help adults improve relationships, confidence, and wellbeing."/>
+<link rel="canonical" href="https://BlossomUp.netlify.app/"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/style.css"/>
+
+<!-- JSON-LD Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://BlossomUp.netlify.app/#organization",
+      "name": "BlossomUp",
+      "url": "https://BlossomUp.netlify.app/",
+      "logo": "https://BlossomUp.netlify.app/images/hero.jpg",
+      "description": "BlossomUp is a modern digital personal growth platform focused on helping people better understand themselves, improve their relationships, and build more fulfilling lives through self-discovery tools, educational experiences, and guided development programs.",
+      "sameAs": [
+        "https://blossomup.co",
+        "https://blossomup.co/reviews",
+        "https://www.facebook.com/p/BlossomUp-61554149566847/",
+        "https://instagram.com/blossomup_co/",
+        "https://www.youtube.com/@BlossomUp",
+        "https://www.trustpilot.com/review/blossomup.co",
+        "https://www.quora.com/profile/BlossomUp",
+        "https://scholar.google.com/citations?user=bUNXiqQAAAAJ&hl=en",
+        "https://prabook.com/web/actual-view.html?profileId=3783882",
+        "https://github.com/BlossomUpCo",
+        "https://wikialpha.co/wiki/BlossomUp",
+        "https://substack.com/@blossomup",
+        "https://www.wikidata.org/wiki/User:BlossomUp",
+        "https://orcid.org/0009-0004-5583-0703",
+        "https://linktr.ee/blossomup_co",
+        "https://www.f6s.com/BlossomUpCo",
+        "https://www.behance.net/blossomupco",
+        "https://dribbble.com/BlossomUp",
+        "https://www.crunchbase.com/organization/blossomup",
+        "https://about.me/blossomup",
+        "https://muckrack.com/blossomup-co",
+        "https://www.slideshare.net/BlossomUp"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://BlossomUp.netlify.app/#website",
+      "url": "https://BlossomUp.netlify.app/",
+      "name": "BlossomUp",
+      "publisher": {"@id": "https://BlossomUp.netlify.app/#organization"}
+    }
+  ]
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(function(){
+  const _sb=supabase.createClient('https://aowblircaymwuymcmllh.supabase.co','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvd2JsaXJjYXltd3V5bWNtbGxoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIzMzExMjcsImV4cCI6MjA2NzkwNzEyN30.qS7jxVwu83zEYMvxNo7C_2dtVrSZ6wYIFiNtoN69UkQ');
+  const _cid='BlossomUp';
+  async function loadSBLinks(){
+    const[{data:soc},{data:news}]=await Promise.all([
+      _sb.from('social_media').select('*').eq('client_id',_cid),
+      _sb.from('news_links').select('*').eq('client_id',_cid)
+    ]);
+    const render=(ids,data)=>ids.forEach(id=>{
+      const el=document.getElementById(id);
+      if(!el||!data)return;
+      el.innerHTML='';
+      data.forEach(l=>{
+        const a=document.createElement('a');
+        a.href=l.url;a.target='_blank';a.rel='noopener noreferrer';a.title=l.name;
+        a.innerHTML='<img src="'+l.icon+'" alt="'+l.name+'" style="width:30px;height:30px;border-radius:4px"/>';
+        el.appendChild(a);
+      });
+    });
+    render(['sml-soc-home'],soc);
+    render(['sml-news-home'],news);
+  }
+  document.addEventListener('DOMContentLoaded',loadSBLinks);
+})();
+</script>
+</head>
+<body>
+
+<!-- ══ STICKY NAV ══════════════════════════════════════════════════ -->
+<nav id="main-nav">
+  <a class="nav-logo" href="/">Blossom<span> Up</span></a>
+  <ul class="nav-links">
+    <li><a class="active" href="/">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ══ HERO ═══════════════════════════════════════════════════════ -->
+<div class="h-hero">
+  <div class="h-inner">
+    <div class="h-photo"><img src="images/hero.jpg" alt="BlossomUp personal growth platform"/></div>
+    <div>
+      <h1 class="h-name">BlossomUp</h1>
+      <p class="h-role">Digital Personal Growth Platform</p>
+      <p class="h-desc">BlossomUp is a structured personal growth platform built for motivated adults who want more than a personality quiz. Combining psychology-inspired assessments, guided challenges, and habit-building tools, BlossomUp delivers practical self-improvement that is designed to be used — and returned to — throughout life.</p>
+      <div class="h-loc">Online · Worldwide</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ABOUT TEASER ═══════════════════════════════════════════════ -->
+<div class="h-about">
+  <div class="ha-inner">
+    <div class="ha-text">
+      <p class="eyebrow">What We Build</p>
+      <h2 class="sec-title">Personal Growth That Goes Beyond the Quiz</h2>
+      <p>BlossomUp was founded on a straightforward observation: millions of people were actively searching for answers about love, relationships, confidence, and purpose — yet the available resources were either shallow entertainment or overly clinical programs that felt inaccessible. The platform was built to bridge that gap, combining the design sensibility of a modern consumer product with the substance of structured personal development.</p>
+      <p>The tools BlossomUp offers — personality and compatibility assessments, <a href="blossomup-relationships-emotional-intelligence.html">relationship and emotional intelligence programs</a>, journaling tools, guided growth challenges, and long-term tracking — are grounded in psychology-informed frameworks. Each feature is designed to produce outcomes users can apply immediately, not just insights they read and set aside.</p>
+      <p>BlossomUp serves a global audience through web and mobile experiences, continuously improved by a distributed team spanning product, design, and customer experience. The platform is built for repeated use — a place users return to as their goals and life circumstances evolve.</p>
+      <a class="ha-link" href="about.html">Learn more about BlossomUp →</a>
+    </div>
+    <div><img class="ha-photo" src="images/hero-secondary.jpg" alt="BlossomUp platform tools and features"/></div>
+  </div>
+</div>
+
+<!-- ══ SOCIAL + PRESS ACCORDION ═══════════════════════════════════ -->
+<div class="acc-section" style="background:var(--off)">
+  <div class="acc-wrap">
+    <button class="acc-btn" onclick="tog(this,'s-home')">Follow BlossomUp on Social Media <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="s-home"><div id="sml-soc-home" class="social-media-list"></div></div>
+    <button class="acc-btn" onclick="tog(this,'n-home')">BlossomUp in the Press <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="n-home"><div id="sml-news-home" class="social-media-list"></div></div>
+  </div>
+</div>
+
+<!-- ══ LATEST ARTICLES ════════════════════════════════════════════ -->
+<div class="h-press">
+  <div class="pi">
+    <p class="eyebrow">Platform Insights</p>
+    <h2 class="sec-title">Understanding BlossomUp</h2>
+    <div class="cards">
+      <a class="card card-article" href="what-blossomup-is.html">
+        <div class="ct-img"><img src="images/article-1.jpg" alt="What BlossomUp is and what it is not"/></div>
+        <div class="cb">
+          <div class="cb-pub">Platform Overview</div>
+          <div class="cb-hl">What BlossomUp Is — and What It Is Not</div>
+          <div class="cb-yr">June 2025</div>
+        </div>
+      </a>
+      <a class="card card-article" href="blossomup-app-growth-tools.html">
+        <div class="ct-img"><img src="images/article-2.jpg" alt="BlossomUp app and digital growth tools"/></div>
+        <div class="cb">
+          <div class="cb-pub">App & Features</div>
+          <div class="cb-hl">How BlossomUp's App Delivers Real Personal Growth Tools</div>
+          <div class="cb-yr">June 2025</div>
+        </div>
+      </a>
+      <a class="card card-article" href="blossomup-relationships-emotional-intelligence.html">
+        <div class="ct-img"><img src="images/article-3.jpg" alt="BlossomUp relationships and emotional intelligence"/></div>
+        <div class="cb">
+          <div class="cb-pub">Relationships</div>
+          <div class="cb-hl">Can BlossomUp Help with Relationships and Emotional Intelligence?</div>
+          <div class="cb-yr">June 2025</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ CONTACT TEASER ═════════════════════════════════════════════ -->
+<div class="h-contact">
+  <div class="hc-inner">
+    <div>
+      <p class="eyebrow">Get in Touch</p>
+      <h2 class="sec-title">Contact</h2>
+      <form class="cf" onsubmit="return false">
+        <div><label>Your Name</label><input type="text" placeholder="Your name"/></div>
+        <div><label>Email</label><input type="email" placeholder="email@example.com"/></div>
+        <div><label>Message</label><textarea placeholder="Your message..."></textarea></div>
+        <button class="btn-sm" type="submit">Send Message</button>
+      </form>
+    </div>
+    <div class="hcp">
+      <h3 class="hc-title">Let's connect.</h3>
+      <p>Whether you're a user with a question, a partner exploring opportunities, or a journalist covering the personal growth space, BlossomUp welcomes the conversation. Reach out using the form or visit the <a href="contact.html">contact page</a> for more options.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 BlossomUp. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+<script>
+function tog(btn,id){
+  const c=document.getElementById(id),open=c.classList.contains('open');
+  document.querySelectorAll('.acc-body').forEach(e=>e.classList.remove('open'));
+  document.querySelectorAll('.acc-btn').forEach(e=>e.classList.remove('open'));
+  if(!open){c.classList.add('open');btn.classList.add('open');}
+}
+</script>
+</body>
+</html>

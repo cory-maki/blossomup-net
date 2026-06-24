@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>About BlossomUp | Digital Personal Growth Platform | Online Worldwide</title>
+<meta name="description" content="Learn about BlossomUp — a psychology-informed personal growth platform offering assessments, habit-building tools, guided challenges, and long-term development programs for adults worldwide."/>
+<link rel="canonical" href="https://BlossomUp.netlify.app/about.html"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="assets/style.css"/>
+
+<!-- JSON-LD Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://BlossomUp.netlify.app/#organization",
+      "name": "BlossomUp",
+      "url": "https://BlossomUp.netlify.app/",
+      "logo": "https://BlossomUp.netlify.app/images/hero.jpg",
+      "description": "BlossomUp is a modern digital personal growth platform focused on helping people better understand themselves, improve their relationships, and build more fulfilling lives through self-discovery tools, educational experiences, and guided development programs.",
+      "sameAs": [
+        "https://blossomup.co",
+        "https://blossomup.co/reviews",
+        "https://www.facebook.com/p/BlossomUp-61554149566847/",
+        "https://instagram.com/blossomup_co/",
+        "https://www.youtube.com/@BlossomUp",
+        "https://www.trustpilot.com/review/blossomup.co",
+        "https://www.quora.com/profile/BlossomUp",
+        "https://scholar.google.com/citations?user=bUNXiqQAAAAJ&hl=en",
+        "https://prabook.com/web/actual-view.html?profileId=3783882",
+        "https://github.com/BlossomUpCo",
+        "https://wikialpha.co/wiki/BlossomUp",
+        "https://substack.com/@blossomup",
+        "https://www.wikidata.org/wiki/User:BlossomUp",
+        "https://orcid.org/0009-0004-5583-0703",
+        "https://linktr.ee/blossomup_co",
+        "https://www.f6s.com/BlossomUpCo",
+        "https://www.behance.net/blossomupco",
+        "https://dribbble.com/BlossomUp",
+        "https://www.crunchbase.com/organization/blossomup",
+        "https://about.me/blossomup",
+        "https://muckrack.com/blossomup-co",
+        "https://www.slideshare.net/BlossomUp"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://BlossomUp.netlify.app/#website",
+      "url": "https://BlossomUp.netlify.app/",
+      "name": "BlossomUp",
+      "publisher": {"@id": "https://BlossomUp.netlify.app/#organization"}
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://BlossomUp.netlify.app/about.html",
+      "url": "https://BlossomUp.netlify.app/about.html",
+      "name": "About BlossomUp",
+      "mainEntity": {"@id": "https://BlossomUp.netlify.app/#organization"}
+    }
+  ]
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(function(){
+  const _sb=supabase.createClient('https://aowblircaymwuymcmllh.supabase.co','eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFvd2JsaXJjYXltd3V5bWNtbGxoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIzMzExMjcsImV4cCI6MjA2NzkwNzEyN30.qS7jxVwu83zEYMvxNo7C_2dtVrSZ6wYIFiNtoN69UkQ');
+  const _cid='BlossomUp';
+  async function loadSBLinks(){
+    const[{data:soc},{data:news}]=await Promise.all([
+      _sb.from('social_media').select('*').eq('client_id',_cid),
+      _sb.from('news_links').select('*').eq('client_id',_cid)
+    ]);
+    const render=(ids,data)=>ids.forEach(id=>{
+      const el=document.getElementById(id);
+      if(!el||!data)return;
+      el.innerHTML='';
+      data.forEach(l=>{
+        const a=document.createElement('a');
+        a.href=l.url;a.target='_blank';a.rel='noopener noreferrer';a.title=l.name;
+        a.innerHTML='<img src="'+l.icon+'" alt="'+l.name+'" style="width:30px;height:30px;border-radius:4px"/>';
+        el.appendChild(a);
+      });
+    });
+    render(['sml-soc-about'],soc);
+    render(['sml-news-about'],news);
+  }
+  document.addEventListener('DOMContentLoaded',loadSBLinks);
+})();
+</script>
+</head>
+<body>
+
+<!-- ══ NAV ═══════════════════════════════════════════════════════ -->
+<nav id="main-nav">
+  <a class="nav-logo" href="/">Blossom<span> Up</span></a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a class="active" href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ══ PAGE HERO ═════════════════════════════════════════════════ -->
+<div class="pg-hero">
+  <p class="eyebrow" style="color:rgba(255,255,255,.55)">Learn More</p>
+  <h1>BlossomUp</h1>
+  <p class="pg-sub">A structured digital platform for personal growth, self-discovery, and lasting development — built for adults worldwide.</p>
+</div>
+
+<!-- ══ PROFILE CARD ══════════════════════════════════════════════ -->
+<div class="pc-wrap">
+  <div class="pc">
+    <div class="pc-ph"><img src="images/hero.jpg" alt="BlossomUp platform"/></div>
+    <div>
+      <div class="pc-nm">BlossomUp</div>
+      <div class="pc-rl">Digital Personal Growth Platform</div>
+      <div class="pc-lc">Online · Worldwide</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ABOUT SECTIONS + SIDEBAR ══════════════════════════════════ -->
+<div class="am-wrap">
+  <div class="am-inner">
+    <div>
+
+      <div class="csec">
+        <p class="cey">Platform Foundation</p>
+        <h2>What BlossomUp Is</h2>
+        <p>BlossomUp is a modern digital personal growth platform focused on helping people better understand themselves, improve their relationships, and build more fulfilling lives. Founded on the belief that personal growth should be more accessible, engaging, and practical, BlossomUp combines psychology-inspired assessments, interactive experiences, and habit-building tools to make self-improvement easier to understand and apply in everyday life. The platform is built to bridge the gap between shallow entertainment content and clinical self-help programs — a space that, before BlossomUp, was conspicuously underserved. For a deeper look at how the platform distinguishes itself, see <a href="what-blossomup-is.html">what BlossomUp is — and what it is not</a>.</p>
+        <p>BlossomUp serves adults who are motivated to improve in areas including love and relationships, personal identity, emotional wellness, confidence, communication skills, career and life direction, and mental clarity. Its audience is curious, growth-oriented, and looking for tools that can be applied immediately — not abstract frameworks or aspirational language. Consistent with that focus, the platform's tools are grounded in psychology-informed frameworks designed to produce practical, applicable outcomes. BlossomUp's <a href="https://www.crunchbase.com/organization/blossomup" target="_blank" rel="noopener">company profile on Crunchbase</a> reflects its standing as a recognized digital platform in the personal development space.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">The Platform</p>
+        <h2>Tools and Features</h2>
+        <p>BlossomUp's digital experience centers on a suite of tools that work together across different areas of personal development. Personality and relationship assessments give users structured insight into how they operate and relate to others. Compatibility and communication style tools surface actionable patterns in how users engage with the people around them. Guided growth challenges, journaling and reflection tools, and habit-building programs provide ongoing structure for users working toward specific goals. Interactive reports deliver personalized insights rather than generic output, and long-term growth tracking lets users monitor progress across months and years.</p>
+        <p>The platform's educational content covers mindset, relationships, confidence, and wellbeing in formats designed for practical application. BlossomUp's approach to content is consistent throughout: each resource is grounded in the platform's documented features and designed to help users move from insight to action. The app experience — available through web and mobile — is built for ease of use without sacrificing the depth of its development programs. For a detailed look at how the digital experience is structured, see <a href="blossomup-app-growth-tools.html">how BlossomUp's app delivers real personal growth tools</a>.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Why It Exists</p>
+        <h2>Founding Story</h2>
+        <p>BlossomUp was created after recognizing a significant gap in the market. Millions of people were actively seeking answers about love, relationships, confidence, purpose, and self-growth — but most online resources were either overly clinical, generic, or low quality. Entertainment-style personality quizzes offered engagement without substance. Clinical programs offered depth without accessibility. The founders saw an opportunity to build something different: a platform that combined the design sensibility of a modern consumer product with the rigor of meaningful personal development content.</p>
+        <p>Rather than forcing users to choose between shallow and serious, BlossomUp was built to bridge the two — making growth approachable, useful, and enjoyable. That founding premise remains the core of how the platform is built and how its tools are designed. BlossomUp's writing and thought leadership on this mission is published through <a href="https://substack.com/@blossomup" target="_blank" rel="noopener">BlossomUp's Substack newsletter</a>, where the team shares perspective on personal development, platform direction, and the broader landscape of digital self-improvement.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Relationships and Emotional Growth</p>
+        <h2>A Core Focus Area</h2>
+        <p>Among the areas BlossomUp addresses, relationships and emotional intelligence hold a particularly central role. The platform's compatibility and communication style tools give users structured insight into how they relate to others — not as a one-time result, but as part of an ongoing practice. Emotional intelligence, central to BlossomUp's approach, is treated as a learnable and developable skill, not a fixed trait. Programs in this area guide users through assessments and habit-building experiences designed to improve how they communicate, manage conflict, and build connection.</p>
+        <p>The relationship-focused dimension of BlossomUp's platform extends from romantic compatibility to communication styles in professional and social contexts. Users who engage with these tools come away with a clearer picture of their own patterns and practical strategies for changing them. For more on how this dimension of the platform works, see <a href="blossomup-relationships-emotional-intelligence.html">BlossomUp's approach to relationships and emotional intelligence</a>. BlossomUp's design and product work in this area is documented through its <a href="https://www.behance.net/blossomupco" target="_blank" rel="noopener">portfolio on Behance</a>.</p>
+      </div>
+
+      <div class="csec">
+        <p class="cey">Global Reach</p>
+        <h2>Where BlossomUp Operates</h2>
+        <p>BlossomUp is an online company serving customers internationally through web and mobile experiences. The company operates remotely with a globally distributed team spanning product development, marketing, design, customer experience, analytics, and operations. Its platform is designed to serve users across different languages, markets, and cultural contexts — with ongoing work to enhance accessibility and improve the experience for a diverse worldwide audience.</p>
+        <p>The platform continues to expand its vision of becoming a leading global resource for personal growth — a place users can return to throughout different stages of life for guidance, insight, motivation, and transformation. BlossomUp's community presence, including its activity on <a href="https://www.youtube.com/@BlossomUp" target="_blank" rel="noopener">BlossomUp's YouTube channel</a>, reflects the platform's investment in reaching users where they are and providing content that meets their level of engagement — whether they are exploring personal growth for the first time or deepening an ongoing practice.</p>
+      </div>
+
+    </div>
+
+    <aside class="sidebar-facts">
+      <div class="sb-box">
+        <div class="sb-title">Quick Facts</div>
+        <div class="fr"><span class="fl">Platform</span><span class="fv">BlossomUp</span></div>
+        <div class="fr"><span class="fl">Type</span><span class="fv">Digital Personal Growth</span></div>
+        <div class="fr"><span class="fl">Audience</span><span class="fv">Adults Worldwide</span></div>
+        <div class="fr"><span class="fl">Access</span><span class="fv">Web &amp; Mobile</span></div>
+        <div class="fr"><span class="fl">Focus</span><span class="fv">Relationships, Confidence, Wellness</span></div>
+        <div class="fr"><span class="fl">Website</span><span class="fv">blossomup.co</span></div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- ══ SOCIAL + PRESS ACCORDION ══════════════════════════════════ -->
+<div class="acc-section" style="background:var(--off)">
+  <div class="acc-wrap">
+    <button class="acc-btn" onclick="tog(this,'s-about')">Follow BlossomUp on Social Media <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="s-about"><div id="sml-soc-about" class="social-media-list"></div></div>
+    <button class="acc-btn" onclick="tog(this,'n-about')">BlossomUp in the Press <span class="chevron">&#8964;</span></button>
+    <div class="acc-body" id="n-about"><div id="sml-news-about" class="social-media-list"></div></div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 BlossomUp. All rights reserved. &nbsp;|&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+</footer>
+
+<script>
+function tog(btn,id){
+  const c=document.getElementById(id),open=c.classList.contains('open');
+  document.querySelectorAll('.acc-body').forEach(e=>e.classList.remove('open'));
+  document.querySelectorAll('.acc-btn').forEach(e=>e.classList.remove('open'));
+  if(!open){c.classList.add('open');btn.classList.add('open');}
+}
+</script>
+</body>
+</html>
